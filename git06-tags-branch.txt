@@ -1,0 +1,57 @@
+## Tag é uma etiqueta que é um atalho para reverter um determinado ponto no seu projeto ##
+## ------------------------------------------------------------------------------------ ##
+
+## Para listar as tags ##
+## ------------------- ##
+$ git tag
+
+## Para criar uma tag anotada com a opção -a. Uma tag anotada é aquela que guarda as informações do autor ##
+## ------------------------------------------------------------------------------------------------------ ##
+$ git tag -a v1.0 -m "Versão 1.0"
+
+## Criar um tag para um commit específico, primeiro vamos listar os commits ##
+## ------------------------------------------------------------------------ ##
+$ git log --pretty=oneline
+
+## Selecione o hash do commit desejado e cole no comando abaixo: ##
+## ------------------------------------------------------------- ##
+git tag -a v0.0 59bd513b9a68a6bfeaa4eb69093bce90c779d41c -m "Versão 0.0"
+
+## Para saber mais detalhes sobre uma tag ##
+## -------------------------------------- ##
+$ git show v0.0
+
+## Acessar ou trocar de uma tag para outra ##
+## --------------------------------------- ##
+$ git checkout v1.0
+
+## Deletando um tag ##
+$ git tag -d v0.0
+
+## Criar um branch ##
+## --------------- ##
+$ git branch teste-git
+
+## Trocar para a branch criada ##
+## --------------------------- ##
+$ git checkout teste-git
+
+## Cria uma branch e já faz a troca para esta branch ##
+## ------------------------------------------------- ##
+$ git checkout -b teste
+
+## Grava as mudanças na branch atual ##
+## --------------------------------- ##
+$ git mmit -a -m "Gravando mudanças na branch teste"
+
+## Agora muda para a branch que vai receber a mudança ##
+## -------------------------------------------------- ##
+$ git checkout master
+
+## Faz um merge com a branch teste ##
+## ------------------------------- ##
+git merge teste
+
+## Para deletar uma branch git branch -d ##
+## ------------------------------------- ##
+$ git branch -d teste

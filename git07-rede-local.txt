@@ -1,0 +1,44 @@
+## Na barra de pesquisa do Windows 10, digite “Painel de controle” e clique no ícone; ##
+## ---------------------------------------------------------------------------------- ##
+## Clique em “Exibir por”, “Ícones pequenos”; ##
+## ------------------------------------------ ##
+## Clique em “Central de Rede e Compartilhamento”; ##
+## ----------------------------------------------- ##
+## Na lateral esquerda, clique em “Alterar as configurações de compartilhamento avançadas”; ##
+## ---------------------------------------------------------------------------------------- ##
+## Ative as opções “Ativar descoberta de rede” e “Ativar compartilhamento de arquivo e impressora”; ##
+## ------------------------------------------------------------------------------------------------ ##
+## Clique em “Todas as Redes” e depois em “Ativar compartilhamento para que qualquer pessoa com acesso à rede possa ler e gravar arquivos nas Pastas Públicas”;
+Clique em “Salvar alterações”; ##
+## ----------------------------------------------------------------------------------------------------------------------------------------------------------- ##
+## Volte para a tela inicial do Painel de controle e clique em “Sistema”; ##
+## ---------------------------------------------------------------------- ##
+## Em “Grupo de trabalho”, todos os computadores da rede devem estar identificados por “WORKGROUP”, para que o recurso funcione corretamente; ##
+## ------------------------------------------------------------------------------------------------------------------------------------------ ##
+## Caso contrário, clique em “Configurações avançadas de sistema”, aba “Nome do computador”, botão “Alterar” e corrija isso. ##
+## ------------------------------------------------------------------------------------------------------------------------- ##
+
+## Feitos esses ajustes, para encontrar uma pasta faça o seguinte: ##
+## --------------------------------------------------------------- ##
+## Abra o Explorador de Arquivos; ##
+## ------------------------------ ##
+## Na barra de busca, digite “\\Nome do Computador\Nome da Pasta Compartilhada” (sem aspas), substituindo os termos pelos nomes corretos do computador e da pasta que você deseja acessar e tecle “Enter”; ##
+## ------------------------------------------------------------------------------------------------------------------------------------------------------------------ ##
+## Você será direcionado para a pasta compartilhada. ##
+## ------------------------------------------------- ##
+
+## Vá para a máquina que será repositório, clique com o botão direito na pasta que será repositório e selecine "Git Bash Here" ##
+## --------------------------------------------------------------------------------------------------------------------------- ##
+
+## Com o terminal do git aberto, digite "git init --bare" ##
+## ------------------------------------------------------ ##
+
+## Vá para a máquina cliente se for uma máquina linux siga esse passos ##
+## ------------------------------------------------------------------- ##
+$ sudo mount -t cifs //192.168.0.43/workspace/repository-git-rede-local -o username=ipiranga,password=P@ssw0rd ~/workspace/repository-git-rede-local/
+
+## Faça o clone da repositório ##
+## --------------------------- ##
+$ git clone /home/adriano.negodri/workspace/repository-git-rede-local repository-git-rede-local-fedora
+
+

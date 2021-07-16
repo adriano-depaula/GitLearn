@@ -1,0 +1,72 @@
+## Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições
+## ----------------------------------------------------------------------------------------------------------------------------------------------------------------- ##
+## de qualquer tipo de arquivo. O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o desenvolvimento do kernel Linux, mas foi adotado por muitos 
+## ----------------------------------------------------------------------------------------------------------------------------------------------------------------- ##
+## outros projetos. 
+## Tendo uma arquitetura distribuída, o Git é um exemplo de DVCS (portanto, Sistema de Controle de Versão Distribuído). Em vez de ter apenas um único local para o histórico completo da versão do software, como é comum em sistemas de controle de versão outrora populares como CVS ou SVN, no Git, a cópia de trabalho de todo desenvolvedor do código também é um repositório que pode conter o histórico completo de todas as alterações.
+
+O Git tem a funcionalidade, desempenho, segurança e flexibilidade que a maioria das equipes e desenvolvedores individuais precisa. Nas comparações lado a lado com a maioria das outras alternativas, muitas equipes acham que o Git é muito favorável.
+
+Desempenho
+==========
+Fazer o commit de novas alterações, branches, mesclagem e comparação de versões anteriores – tudo é otimizado para desempenho. Os algoritmos implementados no Git aproveitam o conhecimento profundo sobre atributos comuns de árvores de arquivos de código-fonte reais, como costumam ser modificados ao longo do tempo e quais são os padrões de acesso.
+
+Segurança
+=========
+O Git foi projetado com a integridade do código-fonte gerenciado como uma prioridade. O conteúdo dos arquivos, bem como os verdadeiros relacionamentos entre arquivos e diretórios, versões, tags e commits, todos esses objetos no repositório do Git são protegidos com um algoritmo de hash de criptografia seguro chamado SHA1. Isso protege o código e o histórico de alterações contra alterações acidentais e maliciosas e garante que o histórico tenha rastreabilidade total.
+
+Flexibilidade
+=============
+Um dos principais objetivos de design do Git é a flexibilidade. O Git é flexível em vários aspectos: suporte a vários tipos de fluxos de trabalho de desenvolvimento não lineares, em eficiência em projetos pequenos e grandes e em compatibilidade com muitos sistemas e protocolos existentes.
+
+O Git foi projetado para tratar os branches e tags como cidadãos de primeira classe (ao contrário do SVN) e operações que afetam branches e tags (como mesclagem ou reversão) também são armazenadas como parte do histórico de alterações.
+
+O que é um repositório?
+=======================
+Um diretório ou espaço de armazenamento onde seus projetos podem residir. Pode ser local para uma pasta em seu computador ou pode ser um espaço de armazenamento no GitHub ou outro host online. Você pode manter arquivos de código, arquivos de texto, arquivos de imagem, você escolhe, dentro de um repositório.
+
+A partir do seu shell, instale o Git usando apt-get
+====================================================
+$ sudo apt-get update && $ sudo apt-get -y install git
+$ git --version
+
+Pacotes do Git estão disponíveis via yum e dnf:
+===============================================
+$ sudo dnf install git
+ou
+$ sudo yum install git
+$ git --version
+
+Baixe o instalador mais recente do Git for Windows.
+Quando você tiver iniciado o instalador com sucesso, vai ver a tela do assistente de configuração do Git. Siga os avisos Next e Finish para concluir a instalação. As opções padrão são bastante sensíveis para a maioria dos usuários.
+Abra um prompt de comando (ou Git Bash se durante a instalação você optou por não usar o Git do Prompt de Comando do Windows).
+
+https://github.com/git-for-windows/git/releases/latest
+
+Instalador autônomo do Git para Windows
+=======================================
+
+Há dois tipos de repositórios:
+==============================
+Repositório local
+Repositório Central
+
+## Antes de começar a usar o Git, você tem que torná-lo disponível em seu computador. Mesmo se ele já tiver sido instalado, é provavelmente uma boa idéia atualizar
+## -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## para a versão mais recente. Você pode instalá-lo como um pacote ou através de outro instalador, ou baixar o código fonte e compilá-lo.
+## -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Instalando no Linux ##
+## ------------------- ##
+
+## Se você deseja instalar o Git no Linux através de um instalador binário, você pode geralmente fazê-lo através da ferramenta básica de gerenciamento de pacotes que ## vem com sua distribuição. Se você usar Fedora por exemplo, você pode usar o dnf:
+## -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+$ sudo dnf install git-all
+
+Se você usar uma distribuição baseada em Debian como o Ubuntu, use o apt-get:
+$ sudo apt-get install git-all
+
+## Instalando no Windows ##
+## --------------------- ##
+## Há também algumas maneiras de instalar o Git no Windows. A compilação mais oficial está disponível para download no site do Git. Basta ir ao http://git-scm.com/download/win e o download começará automaticamente. Note que este é um projeto chamado Git para Windows (também chamado msysGit), que é algo separado do Git; para mais informações sobre isso, vá para http://msysgit.github.io/.
+

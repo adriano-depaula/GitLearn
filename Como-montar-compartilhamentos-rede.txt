@@ -1,0 +1,24 @@
+## Como montar compartilhamentos de rede Windows (CIFS ou SMBFS) no Linux ##
+## ---------------------------------------------------------------------- ##
+## https://lamasbr.github.io/2018/03/05/How-to-mount-Windows-shared-folders-cifs-or-smbfs-in-Linux.html ##
+## ---------------------------------------------------------------------------------------------------- ##
+
+## Usando chaves SSH com o Git ##
+## --------------------------- ##
+## https://kamarada.github.io/pt/2017/04/09/usando-chaves-ssh-com-o-git/ ##
+## --------------------------------------------------------------------- ##
+
+## What is an SSH KEY? ##
+## ------------------- ##
+## https://www.atlassian.com/br/git/tutorials/git-ssh ##
+## -------------------------------------------------- ##
+
+## Gogs's Prerequisites             ## What is Gogs? ##
+## -------------------------------- ## ------------- ##
+## https://gogs.io/docs/installation ## https://gogs.io/docs/intro ##
+## --------------------------------- ## -------------------------- ##
+
+## Git Commands Cheetsheet ##
+## ----------------------- ##
+## http://ashleywang.me/misc/2015/03/14/git.html ##
+## --------------------------------------------- ##

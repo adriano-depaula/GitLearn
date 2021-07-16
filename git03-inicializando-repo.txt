@@ -1,0 +1,75 @@
+## Inicializando um Repositório em um Diretório Existente ##
+## ====================================================== ##
+## Para você começar a monitorar um projeto existente com Git, você deve ir para o diretório desse projeto. ##
+## -------------------------------------------------------------------------------------------------------- ##
+## Se você nunca fez isso, use o comando a seguir, que terá uma pequena diferença dependendo do sistema em que está executando: ##
+## ---------------------------------------------------------------------------------------------------------------------------- ##
+
+## Vá para a pasta do seu projeto ##
+## ------------------------------ ##
+$ cd ~/seu-repotivorio
+
+## Crie seu repositório ##
+$ git init
+
+## Isso cria um novo subdiretório chamado .git que contém todos os arquivos necessários de seu ##
+## ------------------------------------------------------------------------------------------- ##
+## repositório – um esqueleto de repositório Git. Neste ponto, nada em seu projeto é monitorado ainda. ##
+## --------------------------------------------------------------------------------------------------- ##
+
+## O comando git status exibe as condições do diretório de trabalho e a área de espera ##
+## --------------------------------------- ##
+$ git status
+
+## Adicionando arquivos para área de espera (staging area) ##
+## ----------------------------------------------------- ##
+## Este comando atualiza o índice utilizando o conteúdo atual encontrado na árvore de trabalho para preparar o conteúdo para o próximo commit. ##
+## ------------------------------------------------------------------------------------------------------------------------------------------- ##
+$ git add nome-arquivo.txt, git add qualquer-extensão.*, git add -A ou git add .
+
+## Verificando o status do seu repositório ##
+## --------------------------------------- ##
+$ git status
+
+## Confirmando as alterações, tirando da área de espera para o repositório ##
+## ----------------------------------------------------------------------- ##
+$ git commit -m "MSG do commit - Commit inicial do projeto GitPlay"
+
+## Verificando o status do seu repositório ##
+## --------------------------------------- ##
+$ git status
+
+## Você pode adicionar para stage e commitar para o repositório com apena um comando ##
+## --------------------------------------------------------------------------------- ##
+$ git commit -a -m "A opção -a funciona como se fosse o git add só que com commit junto"
+
+## Ignorando monitoramento de arquivos ##
+## ----------------------------------- ##
+## Crie um arquivo chamado .gitignore  na pasta do projeto que o git está monitorando ##
+## ---------------------------------------------------------------------------------- ##
+$ touch .gitignore
+
+## Ignora o monitoramento do .gitignore ##
+## ------------------------------------ ##
+.gitignore
+## Não monitora o arquivo arq01.txt ##
+## -------------------------------- ##
+arq01.txt
+## Ignorar todos os arquivos que terminem com “.o” ou “.a” ##
+## ------------------------------------------------------- ##
+*.[oa]
+## Diz ao Git para ignorar todos os arquivos cujo nome termine com um til (~) ##
+## -------------------------------------------------------------------------- ##
+*~
+## Linhas em branco ou começando com # são ignoradas. ##
+## -------------------------------------------------- ##
+## Os padrões que normalmente são usados para nomes de arquivos funcionam. ##
+## ----------------------------------------------------------------------- ##
+## Você pode iniciar padrões com uma barra (/) para evitar recursividade.  ##
+## ----------------------------------------------------------------------  ##
+## Você pode terminar padrões com uma barra (/) para especificar um diretório. ##
+diretorio/
+## --------------------------------------------------------------------------- ##
+## Você pode negar um padrão ao fazê-lo iniciar com um ponto de exclamação (!). ##
+## ---------------------------------------------------------------------------- ##
+!arq02.txt

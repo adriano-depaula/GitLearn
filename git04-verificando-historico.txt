@@ -1,0 +1,67 @@
+## Verifica mudanças no diretório de trabalho, que ainda não foram para a área de espera ##
+## ------------------------------------------------------------------------------------- ##
+$ git diff
+
+## Verifica mudanças na área de espera ##
+## ----------------------------------- ##
+$ git diff --staged
+
+## Git log mostra os logs do seus commits no projeto ##
+## ------------------------------------------------- ##
+$ git log
+
+## Coloca os commits em ordem cronológica do mais recente para o mais antigo, mostra o diff de cada arquivo que foi commitado ##
+## -------------------------------------------------------------------------------------------------------------------------- ##
+$ git log -p -2
+
+## Ver algumas estatísticas abreviadas para cada commit, você pode usar a opção --stat: ##
+## ------------------------------------------------------------------------------------ ##
+$ git log --stat
+
+## Uma outra opção realmente muito util é --pretty. A opção oneline mostra cada commit em uma única linha, ##
+## ------------------------------------------------------------------------------------------------------- ##
+## esta é de muita ajuda se você está olhando para muitos commits. ##
+## --------------------------------------------------------------- ##
+$ git log --pretty=oneline
+
+## A opção format permite a você especificar seu próprio formato de registros de retorno. ##
+## -------------------------------------------------------------------------------------- ##
+$ git log --pretty=format:"%h - %an, %ar : %s"
+
+Table 1. Useful options for git log --pretty=format
+## ------------------------------------------------------ ##
+##  Option ## Description of Output                       ##
+## ------- ## ------------------------------------------- ##
+##    %H   ##  Hash do commit                             ##
+## ------- ## ------------------------------------------  ##
+##    %h   ##  Abreveação do hash do commit               ##
+## ------- ## ------------------------------------------  ##
+##    %T   ##  Árvore do commit                           ##
+## ------- ## ------------------------------------------  ##
+##    %t   ##  Abreveação da árvore do commit             ##
+## ------- ## ------------------------------------------  ##
+##    %P   ##  Hashes pais                                ##
+## ------- ## ------------------------------------------  ##
+##    %p   ##  Hashes pais abreveados                     ##
+## ------- ## ------------------------------------------- ##
+##    %an  ##  Nome do autor do commit                    ##
+## ------- ## ------------------------------------------  ##
+##    %ae  ##  Email do autor do commit                   ##
+## ------- ## ------------------------------------------  ##
+##    %ad  ##  Data do autor(Respeitando a --date=option) ##
+## ------- ## ------------------------------------------  ##
+##    %ar  ##  Autor e data relativa                      ##
+## ------- ## ------------------------------------------  ##
+##    %cn  ##  Nome do autor do commit                    ##
+## ------- ## ------------------------------------------  ##
+##    %ce  ##  Email do autor do commit                   ##
+## ------- ## ------------------------------------------  ##
+##    %cd  ##  Data do autor do commit                    ##
+## ------- ## ------------------------------------------  ##
+##    %cr  ##  Data relativa do autor do commit           ##
+## ------- ## ------------------------------------------  ##
+##    %s   ##  Assunto                                    ##
+## ------- ## ------------------------------------------  ##
+
+Referência:
+https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Vendo-o-hist%C3%B3rico-de-Commits

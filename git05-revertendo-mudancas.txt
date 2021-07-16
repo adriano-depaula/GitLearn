@@ -1,0 +1,19 @@
+## Editando o commit mais recente ##
+## ------------------------------ ##
+$ git commit --amend -m "A aopção --amend é para editar o último commit Adicionando mais informações"
+
+## Adicionando arquivos a área de espera ##
+## ------------------------------------- ##
+$ git add -A
+
+## Removendo mudanças da área de espera ##
+## ------------------------------------ ##
+$ git reset HEAD arq01.txt
+
+## Verificando o status ##
+## -------------------- ##
+$ git status
+
+## Descartando as mudanças do seu arquivo no seu diretório de trabalho ##
+## ------------------------------------------------------------------- ##
+git checkout -- arquivo.txt

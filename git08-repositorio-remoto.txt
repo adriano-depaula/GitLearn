@@ -1,0 +1,50 @@
+## Busca no seu mecanismo de pesquisa por GitHub ou acesse https://github.com/ ##
+## --------------------------------------------------------------------------- ##
+
+## Clique no botão ou link Sign Up e preencha os campos com as  informações solicitadas para criar uma conta no GitHub ##
+## ------------------------------------------------------------------------------------------------------------------- ##
+##                                                                                                                     ##
+## Username: fulano-detal                                                                                              ##
+##------------------------                                                                                             ##
+## Email Address: fulano-detal@outlook.com                                                                             ##
+## ----------------------------------------                                                                            ##
+## Password: xxxxxxxxxxxxxxxxxxx                                                                                       ##
+## -----------------------------                                                                                       ##
+##                                                                                                                     ##
+## ------------------------------------------------------------------------------------------------------------------- ##
+
+## Clonando um projeto do repositorio remoto ##
+## ----------------------------------------- ##
+$ git clone git@github.com:adriano-depaula/git-play.git
+ou
+$ git clone https://github.com/adriano-depaula/git-play.git
+
+## Enviando mudanças para o repositório remoto ##
+## ------------------------------------------- ##
+$ git remote add origin git@github.com:adriano-depaula/git-play.git
+ou
+$ git remote add origin https://github.com/adriano-depaula/git-play.git
+
+## Enviando as mudanças para o Git remoto na branch main ##
+$ git branch -M main
+$ git push -u origin main
+
+## Abra o terminal bash na sua estação de trabalho e digite o comando abaixo para gerar o par de chaves SSH ##
+## -------------------------------------------------------------------------------------------------------- ##
+$ ssh-keygen
+
+## Não precisa digitar nada é só dar enter ##
+## --------------------------------------- ##
+
+## Copie o conteúdo da chave id_rsa.pub no Windows fica em %userprofile%\.ssh\id_rsa.pub e no linux fica em ~/.ssh/id_rsa.pub ##
+## -------------------------------------------------------------------------------------------------------------------------- ##
+$ cat ~/.ssh/id_rsa.pub
+
+## Copia o conteúdo da chave, vá para a sua conta no Github, clica no seu perfil, escolha configurações ou settings vai depender de qual idioma tá configurado ##
+## ----------------------------------------------------------------------------------------------------------------------------------------------------------- ##
+
+## Na coluna esquerda vá para "SSH and GPG keys", clica em "New SSH Key" ##
+## --------------------------------------------------------------------- ##
+
+## Em "SSH keys/Add new", cola o conteúdo da chave id_rsa.pub no campo "Key", dê uma nome qualquer pra chave no campo title e clique em "Add SSH Key" ##
+## -------------------------------------------------------------------------------------------------------------------------------------------------- ##
